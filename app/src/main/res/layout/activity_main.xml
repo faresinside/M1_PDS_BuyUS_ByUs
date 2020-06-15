@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/back_design"
+    android:layout_height="match_parent"
+    tools:context="com.buyusbyus.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Connectez-Vous"
+                android:textColor="@android:color/black"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Email:"
+                android:background="@drawable/ed_design"
+                android:padding="10dp"
+                android:inputType="textEmailAddress"
+                android:textColorHint="@android:color/black"
+                android:textColor="@android:color/black"
+                android:id="@+id/email_login"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:hint="Password:"
+                android:background="@drawable/ed_design"
+                android:padding="10dp"
+                android:inputType="textPassword"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:id="@+id/password_login"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Se connecter"
+                android:background="@drawable/ed_design"
+                android:padding="6dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:id="@+id/btn_login"
+                />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Recherche Produits"
+                android:background="@drawable/ed_design"
+                android:padding="6dp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black"
+                android:id="@+id/btn_search"
+                android:onClick="movetoSearch"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:text="Nouveau client ? créez un compte"
+                android:gravity="center"
+                android:textColor="@android:color/black"
+                android:padding="5dp"
+                android:id="@+id/signup_txt"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "213761857027",
+    "firebase_url": "https://buyusbyus-6f5e6.firebaseio.com",
+    "project_id": "buyusbyus-6f5e6",
+    "storage_bucket": "buyusbyus-6f5e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213761857027:android:7d51f0c2224fe14c76a036",
+        "android_client_info": {
+          "package_name": "com.buyusbyus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213761857027-18mbvde5ib3nfrrd2surf6j593v3thiv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeif0eYdtLw-zDo85qOGgr3oWF-DmDCYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213761857027-18mbvde5ib3nfrrd2surf6j593v3thiv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
