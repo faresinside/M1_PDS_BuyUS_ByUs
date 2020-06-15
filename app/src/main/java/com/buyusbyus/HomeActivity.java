@@ -32,6 +32,7 @@ import java.util.Date;
 
 import com.buyusbyus.Model.Data;
 import com.indooratlas.android.sdk.examples.ListExamplesActivity;
+import com.indooratlas.android.sdk.examples.wayfinding.WayfindingOverlayActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -137,7 +138,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(getApplicationContext(), ListExamplesActivity.class));
+                startActivity(new Intent(getApplicationContext(), WayfindingOverlayActivity.class));
             }
         });
 
