@@ -1,4 +1,4 @@
-package com.buyusbyus.utils;
+package com.indooratlas.android.sdk.examples.utils;
 
 import android.app.Activity;
 import android.content.Context;

@@ -8,9 +8,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:213761857027:android:7d51f0c2224fe14c76a036",
+        "mobilesdk_app_id": "1:213761857027:android:7637dccc34db291f76a036",
         "android_client_info": {
-          "package_name": "com.buyusbyus"
+          "package_name": "com.indooratlas.android.sdk.examples"
         }
       },
       "oauth_client": [

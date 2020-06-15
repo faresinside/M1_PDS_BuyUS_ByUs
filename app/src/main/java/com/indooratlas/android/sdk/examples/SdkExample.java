@@ -1,4 +1,4 @@
-package com.buyusbyus;
+package com.indooratlas.android.sdk.examples;
 
 import android.support.annotation.StringRes;
 

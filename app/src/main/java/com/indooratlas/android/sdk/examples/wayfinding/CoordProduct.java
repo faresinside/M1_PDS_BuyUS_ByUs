@@ -1,4 +1,4 @@
-package com.buyusbyus.wayfinding;
+package com.indooratlas.android.sdk.examples.wayfinding;
 
 import com.google.android.gms.maps.model.LatLng;
 

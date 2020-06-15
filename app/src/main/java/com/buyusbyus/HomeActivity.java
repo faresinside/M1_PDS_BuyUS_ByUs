@@ -18,7 +18,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.buyusbyus.Model.Rules;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -30,9 +29,9 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.text.DateFormat;
 import java.util.Date;
-import java.util.Iterator;
 
 import com.buyusbyus.Model.Data;
+import com.indooratlas.android.sdk.examples.ListExamplesActivity;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -138,7 +137,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(getApplicationContext(),ListExamplesActivity.class));
+                startActivity(new Intent(getApplicationContext(), ListExamplesActivity.class));
             }
         });
 
@@ -146,7 +145,7 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                startActivity(new Intent(getApplicationContext(),ListExamplesActivity.class));
+                startActivity(new Intent(getApplicationContext(),Search.class));
             }
         });
 

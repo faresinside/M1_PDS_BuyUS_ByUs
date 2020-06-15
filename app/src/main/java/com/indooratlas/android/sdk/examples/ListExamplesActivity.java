@@ -1,4 +1,4 @@
-package com.buyusbyus;
+package com.indooratlas.android.sdk.examples;
 
 import android.Manifest;
 import android.app.AlertDialog;
@@ -21,6 +21,8 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.buyusbyus.R;
 
 import java.util.ArrayList;
 

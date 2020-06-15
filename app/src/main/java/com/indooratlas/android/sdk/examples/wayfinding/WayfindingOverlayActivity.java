@@ -1,4 +1,4 @@
-package com.buyusbyus.wayfinding;
+package com.indooratlas.android.sdk.examples.wayfinding;
 
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
@@ -35,7 +35,7 @@ import com.indooratlas.android.sdk.IARoute;
 import com.indooratlas.android.sdk.IAWayfindingListener;
 import com.indooratlas.android.sdk.IAWayfindingRequest;
 import com.buyusbyus.R;
-import com.buyusbyus.SdkExample;
+import com.indooratlas.android.sdk.examples.SdkExample;
 import com.indooratlas.android.sdk.resources.IAFloorPlan;
 import com.indooratlas.android.sdk.resources.IALatLng;
 import com.indooratlas.android.sdk.resources.IALocationListenerSupport;
