@@ -312,21 +312,17 @@ public class WayfindingOverlayActivity extends FragmentActivity
 
 
 
-        //add fct test
-        LatLng point = new LatLng(48.99476357444938,2.1425535902380943);
-        LatLng point1 = new LatLng(48.99476357444938,2.1425535902380943);
-        LatLng point2 = new LatLng(48.99473629641908, 2.1425579488277435);
-        LatLng point3 = new LatLng(48.9947710539067, 2.1426068991422653);
-        LatLng point4 = new LatLng(48.9947527952295, 2.142602540552616);
-        LatLng point5 = new LatLng(48.99472265739834, 2.142605558037758);
+        LatLng point = new LatLng(48.994750155420206, 2.1425381675362587);//entree
+        LatLng point1 = new LatLng(48.99471803772917, 2.1425244212150574);//boucherie
+        LatLng point2 = new LatLng(48.99471781774491, 2.1424784883856773);//Fruits-Légumes
+        LatLng point3 = new LatLng(48.99475455510231, 2.142452336847782);//Boisson
+        LatLng point4 = new LatLng(48.99479591209495, 2.142474465072155);//Fromages
+        LatLng point5 = new LatLng(48.99479415222365, 2.142537161707878);//Poissonnerie
 
         //points d'essai tres exterieurs
-        LatLng point6 = new LatLng(48.99468042040718, 2.1426115930080414); //en bas
-        LatLng point7 = new LatLng( 48.99482582989803, 2.142545543611049); //en haut
-        LatLng point8 = new LatLng(48.99472155747717, 2.14266087859869); //a droite
+        LatLng point6 = new LatLng(48.99475609499094, 2.142497263848782); //Surgelés
+        LatLng point7 = new LatLng( 48.994750155420206, 2.1425381675362587); //Caisse
 
-        //le plus en bas....
-        LatLng point9 = new LatLng(48.99464654279464, 2.142532803118229);
 
         /*listcoord.add(point);
         listcoord.add(point2);
@@ -339,15 +335,13 @@ public class WayfindingOverlayActivity extends FragmentActivity
         listcoord.add(point9);*/
 
         CoordProduct product = new CoordProduct(point, "Entrée", 1);
-        CoordProduct product1 = new CoordProduct(point1, "Pomme", 0);
-        CoordProduct product2 = new CoordProduct(point2, "Pain", 0);
-        CoordProduct product3 = new CoordProduct(point3, "Viande", 0);
-        CoordProduct product4 = new CoordProduct(point4, "surgelé", 0);
-        CoordProduct product5 = new CoordProduct(point5, "Boisson", 0);
-        CoordProduct product6 = new CoordProduct(point6, "Légumes", 0);
-        CoordProduct product7 = new CoordProduct(point7, "Fruits", 0);
-        CoordProduct product8 = new CoordProduct(point8, "Poisson", 0);
-        CoordProduct product9 = new CoordProduct(point8, "Liste de courses terminée", 0);
+        CoordProduct product1 = new CoordProduct(point1, "Boucherie", 0);
+        CoordProduct product2 = new CoordProduct(point2, "Fruits", 0);
+        CoordProduct product3 = new CoordProduct(point3, "Boisson", 0);
+        CoordProduct product4 = new CoordProduct(point4, "Fromages", 0);
+        CoordProduct product5 = new CoordProduct(point5, "Poisson", 0);
+        CoordProduct product6 = new CoordProduct(point6, "Surgelés", 0);
+        CoordProduct product7 = new CoordProduct(point7, "Caisse", 1);
 
         coordProducts.add(product);
         coordProducts.add(product1);
@@ -357,9 +351,6 @@ public class WayfindingOverlayActivity extends FragmentActivity
         coordProducts.add(product5);
         coordProducts.add(product6);
         coordProducts.add(product7);
-        coordProducts.add(product8);
-        coordProducts.add(product9);
-
         coordProductsOrd.add(coordProducts.get(0));
         coordProducts.get(0).setBuy(1);
         int last = 0;
