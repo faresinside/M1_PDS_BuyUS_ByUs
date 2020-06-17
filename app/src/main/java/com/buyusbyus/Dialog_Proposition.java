@@ -42,7 +42,7 @@ public class Dialog_Proposition extends AppCompatDialogFragment {
                         mDatabase = FirebaseDatabase.getInstance().getReference().child("Shopping List").child(uId).child(msg).child("produits");
                         String id=mDatabase.push().getKey();
                         String date= DateFormat.getDateInstance().format(new Date());
-                        Data data=new Data(product,"0",date,id);
+                        Data data=new Data(product,"1",date,id);
                         mDatabase.child(id).setValue(data);
 
                     }
