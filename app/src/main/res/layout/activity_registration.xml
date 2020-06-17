@@ -74,6 +74,19 @@
                 android:textColor="@android:color/black"
                 android:id="@+id/phone"
                 />
+
+            <EditText
+                android:id="@+id/regime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/ed_design"
+                android:hint="Régime alimentaire:"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black" />
+
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

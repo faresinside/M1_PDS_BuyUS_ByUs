@@ -25,6 +25,7 @@ public class RegistrationActivity extends AppCompatActivity {
     private EditText pass;
     private EditText Enom;
     private EditText Eprenom;
+    private EditText Regime;
     private EditText Ephone;
     private TextView signin;
     private Button btnReg;
@@ -48,6 +49,7 @@ public class RegistrationActivity extends AppCompatActivity {
         email=findViewById(R.id.email_reg);
         Ephone=findViewById(R.id.phone);
         pass=findViewById(R.id.password_reg);
+        Regime=findViewById(R.id.regime);
 
 
         btnReg=findViewById(R.id.btn_reg);
@@ -60,8 +62,12 @@ public class RegistrationActivity extends AppCompatActivity {
 
                 final String nom=Enom.getText().toString().trim();
                 final String prenom=Eprenom.getText().toString().trim();
-                final String mEmail=email.getText().toString().trim();
+
+                final String regime=Regime.getText().toString().trim();
                 final String phone=Ephone.getText().toString().trim();
+                final String mEmail=email.getText().toString().trim();
+
+
                 String mPass=pass.getText().toString().trim();
 
                 if (TextUtils.isEmpty(mEmail)){
@@ -85,7 +91,8 @@ public class RegistrationActivity extends AppCompatActivity {
                                     nom,
                                     prenom,
                                     mEmail,
-                                    phone
+                                    phone,
+                                    regime
                             );
 
                             FirebaseDatabase.getInstance().getReference("Users")
