@@ -88,17 +88,16 @@
                 android:textColorHint="@android:color/black" />
 
             <EditText
+                android:id="@+id/password_reg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
-                android:hint="Password:"
                 android:background="@drawable/ed_design"
-                android:padding="10dp"
+                android:hint="Mot de passe:"
                 android:inputType="textPassword"
+                android:padding="10dp"
                 android:textColor="@android:color/black"
-                android:textColorHint="@android:color/black"
-                android:id="@+id/password_reg"
-                />
+                android:textColorHint="@android:color/black" />
 
             <Button
                 android:layout_width="match_parent"
