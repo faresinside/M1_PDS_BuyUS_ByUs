@@ -1,128 +1,81 @@
-# IndoorAtlas SDK Examples for Android
-
-[IndoorAtlas](https://www.indooratlas.com/) provides a unique Platform-as-a-Service (PaaS) solution that runs a disruptive geomagnetic positioning in its full-stack hybrid technology for accurately pinpointing a location inside a building. The IndoorAtlas SDK enables app developers to use high-accuracy indoor positioning in venues that have been fingerprinted.
-
-This example app showcases the IndoorAtlas SDK features and acts as a reference implementation for many of the basic SDK features. Getting started requires you to set up a free developer account and fingerprint your indoor venue using the IndoorAtlas MapCreator tool.
-
-There are also similar examples for iOS in [Objective-C](https://github.com/IndoorAtlas/ios-sdk-examples) and [Swift](https://github.com/IndoorAtlas/ios-sdk-swift-examples).
-
-* [Getting Started](#getting-started)
-    * [Set up your account](#set-up-your-account)
-    * [Set up your API keys](#set-up-your-api-keys)    
-* [Features](#features)
-* [Documentation](#documentation)
-* [SDK Changelog](#sdk-changelog)
-* [License](#license)
-
-
-## Getting Started
-
-### Set up your account
-
-* Set up your [free developer account](https://app.indooratlas.com) in the IndoorAtlas developer portal. Help with getting started is available in the [Quick Start Guide](http://docs.indooratlas.com/quick-start-guide.html).
-* To enable IndoorAtlas indoor positioning in a venue, the venue needs to be fingerprinted with the [IndoorAtlas MapCreator 2](https://play.google.com/store/apps/details?id=com.indooratlas.android.apps.jaywalker) tool.
-* To start developing your own app, create an [API key](https://app.indooratlas.com/apps).
-
-### Set up your API keys
-
-To run the examples you need to configure your IndoorAtlas API keys. If you do not have keys yet, go to <https://app.indooratlas.com> and sign up.
-
-Once you have API keys, edit them into `gradle.properties` in the project root level.
-
-## Examples
-
-
-### Simple Example
-
-* [Simple Example](https://github.com/IndoorAtlas/android-sdk-examples/tree/master/Basic/src/main/java/com/indooratlas/android/sdk/examples/simple): This is the hello world of IndoorAtlas SDK. Displays received location updates as log entries.
-
-![](/example-screenshots/simple_01.jpg)
-
-
-### Imageview Example
-
-* [ImageView](https://github.com/IndoorAtlas/android-sdk-examples/tree/master/Basic/src/main/java/com/indooratlas/android/sdk/examples/imageview): Automatically downloads the floor plan that user has entered and displays it using Dave Morrissey's 
-<https://github.com/davemorrissey/subsampling-scale-image-view>. This is a great library for handling large images! The example also demonstrates smoothly animating the blue dot and how to set up OrientationListener for obtaining device heading
- information.
-
-![](/example-screenshots/imageview_02.jpg)
-
-
-### Google Maps - Overlay Example
-
-* [Google Maps](https://github.com/IndoorAtlas/android-sdk-examples/blob/master/Basic/src/main/java/com/indooratlas/android/sdk/examples/mapsoverlay) - Overlay: Just like *Google Maps - Basic* but demonstrates how to place floor plan on world map by coordinates.
-
-![](/example-screenshots/googlemaps&#32;-&#32;overlay_04.jpg)
-
-
-### Open Street Map Overlay Example
-
-* [Overlay with Open Street Map](https://github.com/IndoorAtlas/android-sdk-examples/tree/master/Basic/src/main/java/com/indooratlas/android/sdk/examples/osmdroid): Similar to Google maps examples, but uses Open Street Maps instead
-
-![](/example-screenshots/open-street-map_08.jpg)
-
-
-### Automatic Venue and Floor Detection Example
-
-* [Automatic Venue and Floor Detection](https://github.com/IndoorAtlas/android-sdk-examples/tree/master/Basic/src/main/java/com/indooratlas/android/sdk/examples/regions): Demonstrates automatic region changes i.e. automatic venue detection and floor detection.
-
-![](/example-screenshots/regions_07.jpg)
-
-
-### Wayfinding Example
-
-* [Wayfinding Example](https://github.com/IndoorAtlas/android-sdk-examples/blob/master/Basic/src/main/java/com/indooratlas/android/sdk/examples/wayfinding/WayfindingOverlayActivity.java#L260): In this example, a wayfinding graph json file is loaded. On the UI, you'll see your current location, and when you tap another point on the floorplan, you'll be shown a wayfinding route to that location. 
-
-* Note: to setup, you need to draw a wayfinding graph for your venue using app.indooratlas.com and save it. Obviously you also need to fingerprint the venue and generate a map. 
-
-![](/example-screenshots/wayfinding_12.jpg)
-
-
-### Location Sharing aka "Find your friend" Example
-
-* [Location sharing](https://github.com/IndoorAtlas/android-sdk-examples/tree/master/Basic/src/main/java/com/indooratlas/android/sdk/examples/sharelocation): Demonstrates sharing location via 3rd party cloud service. Can be used as an example of an multidot application.
-
-![](/example-screenshots/sharelocation-05.jpg)
-
-
-### Foreground Service Positioning Example
-
-* [Foreground Service Positioning Example](https://github.com/IndoorAtlas/android-sdk-examples/tree/master/Basic/src/main/java/com/indooratlas/android/sdk/examples/foregroundservice): Demonstrates running IndoorAtlas positioning when the app is in the background, using an Android Foreground Service.
-
-![](/example-screenshots/foreground-service_14.png)
-
-
-### Geofences Example
-
-* [Geofences](https://github.com/IndoorAtlas/android-sdk-examples/tree/master/Basic/src/main/java/com/indooratlas/android/sdk/examples/geofence): Demonstrates how to set geofences and receive the geofence events.
-
-![](/example-screenshots/geofences_10.png)
-
-
-### Orientation Example
-
-* [Orientation](https://github.com/IndoorAtlas/android-sdk-examples/tree/master/Basic/src/main/java/com/indooratlas/android/sdk/examples/orientation): Demonstrates IndoorAtlas 3D Orientation API.
-
-![](/example-screenshots/orientation_09.jpg)
-
-
-### Set Credentials from Code Example
-
-* [Set credentials](https://github.com/IndoorAtlas/android-sdk-examples/tree/master/Basic/src/main/java/com/indooratlas/android/sdk/examples/credentials): Demonstrates how to set IndoorAtlas credentials from code in runtime.
-
-![](/example-screenshots/set-credentials_06.jpg)
-
-
-## Documentation
-
-The IndoorAtlas SDK API documentation is available in the documentation portal: <http://docs.indooratlas.com/android/>
-
-## SDK Changelog
-
-<http://docs.indooratlas.com/android/CHANGELOG.html>
-
-## License
-
-Copyright 2015-2019 IndoorAtlas Ltd. The IndoorAtlas SDK Examples are released under the Apache License. See the [LICENSE.md](https://github.com/IndoorAtlas/android-sdk-examples/blob/master/LICENSE.md) file for details.
-
-
+# BuyUs/ByUs : Votre journal de promos, solution intelligente pour mieux consommer et bien économiser !
+
+## Contexte du projet
+
+De nos jours, la société dans laquelle nous vivons est une société de consommation. Nous avons
+souvent besoin de savoir où acheter les meilleurs produits aux meilleurs prix. Le facteur de la santé
+a également pris une énorme importance, et c’est un fort critère de choix lorsqu’on souhaite faire ses
+achats. De plus, le modèle de vie moderne restreint le temps disponible pour se permettre de flâner et
+limite le moment d’aller faire ses courses.
+C’est pourquoi, il serait intéressant de trouver une solution qui pourrait apporter réponse à ces
+besoins. Nous avons alors fait le choix de créer un projet qui peut résoudre ces problèmes du quotidien.
+Nous avons décidé de créer un projet nous-même pour permettre à des clients en supermarché de
+gagner du temps lors de leurs achats et aussi de pouvoir leurs faire faire des économies. Ce sujet nous
+semble important par rapport aux problématiques de la société actuelle, mais aussi sur son aspect
+d’aide à la société.
+Notre projet porte ainsi sur le thème de suivi personnalisé des consommateurs selon leurs habitudes
+d’achats et les promotions disponibles sur les produits en supermarché. En effet, de nos jours, il
+est parfois compliqué de connaître toutes les promotions proposées dans les différentes enseignes de
+supermarchés, hypermarchés où sont réalisées les courses du quotidien. Nous trouvons intéressant de
+mettre en place une solution qui permette une meilleure visibilité des réductions disponibles dans ces
+magasins envers ces consommateurs. Par ailleurs, cela permettrait à chacun de repérer un produit à
+prix réduit de manière simplifiée, selon ses habitudes et les commentaires des autres clients sur ce
+produit.
+De ce fait, notre projet consiste à la réalisation d’une application mobile, ayant pour objectif
+de répertorier les différents emplacements de produits en supermarchés, apparaissant sur la liste de
+courses des consommateurs inscrits. De plus, l’utilisateur, consommateur ou non, dans un supermarché
+alentour, pourra être informé des promotions actuelles présentes autour de lui et remplir sa liste de
+courses sur l’application.
+
+De par son envergure, notre projet recouvre différents domaines informatiques, en effet nous re-
+trouvons les notions de Bases de données complexes, avec la présence de nombreux consommateurs
+
+et des données sur les produits présents dans les différents supermarchés. De plus, nous avons la no-
+tion d’apprentissage qui entre en vigueur dans le domaine de l’intelligence artificielle. L’objectif de
+
+notre apprentissage étant d’apprendre des données récoltées par l’application suivant les habitudes des
+consommateurs inscrits. Enfin, nous devrons pouvoir gérer la géolocalisation du client, afin de le guider
+dans le magasin.
+Suite à la décision et mise en accord avec l’établissement de créer un sujet, notre groupe a dû
+choisir un tuteur technique pour la réalisation de ce projet. Après avoir listé les principaux objectifs
+et contenus globaux de BuyUs, il nous a semblé logique que notre tuteur soit spécialisé dans la gestion
+des données. C’est pourquoi nous avons demandé le tutorat de ce projet à Monsieur VODISLAV,
+enseignant de l’université de Cergy-Pontoise spécialisé dans la gestion de données distribuées sur le
+web.
+
+## Objectifs du projet
+
+L’objectif global de notre projet porte sur la réalisation d’une application mobile, permettant des
+interactions avec un consommateur en supermarché facilement utilisable pour tout client potentiel.
+Le but premier étant de pouvoir rechercher les produits disponibles en supermarché et de pouvoir
+constituer une liste de courses en ligne en fonction du lieu où l’on souhaite faire ses courses. Le second
+but de cet objectif est de pouvoir indiquer au consommateur, une fois en supermarché, la localisation
+des produits figurant sur sa liste de courses.
+De plus, l’application est en capacité d’apprendre des habitudes d’achats du client, et va lui proposer
+des produits lors de la constitution de sa liste de courses pouvant l’intéresser voire compléter sa liste
+d’achats. BuyUs est donc évolutive et s’adapte aux profils de ses différents utilisateurs.
+D’un point de vue un peu plus technique, l’objectif global de notre projet peut être décomposé
+selon les domaines ci-après nommés.
+Data Mining : L’usage du Data Mining permet de mieux connaître les envies et habitudes du
+client et ses préférences d’achats. Il sera alors possible de proposer des produits classés selon l’ordre de
+préférences du client qui cherche un produit.
+Data Warehouse : Ce projet comportera également du Data Warehouse, du fait que BuyUs cherche
+
+à collecter des informations bien spécifiques sur les produits en supermarché, les magasins et les uti-
+lisateurs. Ainsi l’objectif est d’intégrer les données nécessaires et indispensables pour répondre aux
+
+principales fonctionnalités de notre projet.
+Machine Learning : L’objectif de notre projet en Machine Learning est de pouvoir apprendre
+des habitudes d’achats du consommateur inscrit sur l’application mobile. En fonction des commerces
+recherchés et des produits recherchés sur notre prototype, ces données seront récupérées. À partir de
+ces données collectées sur l’utilisateur, ce dernier pourra recevoir des notifications personnalisées en
+fonction de ces habitudes et envies.
+Géolocalisation : Dans ce projet, la géolocalisation par l’usage de l’application mobile permettra la
+localisation de l’utilisateur par rapport à un commerce. Le client connaîtra ainsi la position de chacun
+des produits figurant sur sa liste de courses. Il n’aura plus qu’à suivre le chemin indiqué par notre
+application.
+Application mobile : L’objectif de notre projet pour le côté application mobile est de réaliser
+une application qui soit interactive. Cette application permet également de nouvelles fonctionnalités,
+notamment interagir avec les commerces industriels se situant autour de l’utilisateur. L’application
+s’appuiera sur une Base de données "utilisateur" et sur des informations qui lui sont personnelles.
+## Mise en scénario

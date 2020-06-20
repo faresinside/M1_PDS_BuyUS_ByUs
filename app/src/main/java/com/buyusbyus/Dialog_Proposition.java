@@ -25,6 +25,7 @@ public class Dialog_Proposition extends AppCompatDialogFragment {
     }
 
     public android.app.Dialog onCreateDialog(Bundle savedInstanceState) {
+
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("Fréquemment achetés ensemble :")
                 .setMessage("Voulez-vous aussi: "+product+ "?")

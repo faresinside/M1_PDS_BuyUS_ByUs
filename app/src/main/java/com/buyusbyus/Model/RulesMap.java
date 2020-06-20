@@ -1,4 +1,4 @@
-package com.buyusbyus;
+package com.buyusbyus.Model;
 
 import com.buyusbyus.Model.Rules;
 
@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Exemple {
+public class RulesMap {
 
     private List<Rules> items = null;
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
@@ -24,7 +24,9 @@ public class Exemple {
     }
 
     public void setAdditionalProperty(String name, Object value) {
+
         this.additionalProperties.put(name, value);
+
     }
 
 }

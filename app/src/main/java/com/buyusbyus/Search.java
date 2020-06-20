@@ -18,6 +18,7 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.buyusbyus.Model.Product;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -30,8 +31,7 @@ public class Search extends AppCompatActivity {
 
     //this is the JSON Data URL
     //make sure you are using the correct ip else it will not work
-     //private static final String URL_PRODUCTS = "https://byusbuyus.000webhostapp.com/api.php";
-     private static final String URL_PRODUCTS = "https://buyus-byus.alwaysdata.net/api.php";
+    private static final String URL_PRODUCTS = "https://buyus-byus.alwaysdata.net/api.php";
 
 
     //a list to store all the products
@@ -42,11 +42,6 @@ public class Search extends AppCompatActivity {
 
     private ProductsAdapter adapter;
     private Toolbar toolbar;
-
-
-
-
-
 
 
 

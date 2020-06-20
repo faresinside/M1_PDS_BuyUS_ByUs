@@ -108,9 +108,6 @@ public class HomeActivity extends AppCompatActivity {
                     Data data=snap.getValue(Data.class);
 
 
-
-
-
                 }
 
 

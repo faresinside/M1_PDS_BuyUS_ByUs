@@ -1,4 +1,4 @@
-package com.buyusbyus;
+package com.buyusbyus.Model;
 public class Product {
     private int id;
     private String title;

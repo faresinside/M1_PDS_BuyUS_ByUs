@@ -1,4 +1,4 @@
-package com.buyusbyus;
+package com.buyusbyus.Adapter;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -10,25 +10,23 @@ import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-
-
-import com.bumptech.glide.Glide;
-import com.buyusbyus.Model.Product;
+import com.buyusbyus.Model.Rules;
+import com.buyusbyus.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.ProductViewHolder> implements Filterable {
+public class RulesAdapter extends RecyclerView.Adapter<RulesAdapter.ProductViewHolder> implements Filterable {
 
 
     private Context mCtx;
-    private List<Product> productList;
-    private List<Product> productListFull;
+    private List<Rules> rulesList;
+    private List<Rules> rulesListFull;
 
-    public ProductsAdapter(Context mCtx, List<Product> productList) {
-        this.mCtx = mCtx;
-        this.productList = productList;
-        productListFull = new ArrayList<>(productList);
+    public RulesAdapter( List<Rules> rulesList) {
+
+        this.rulesList = rulesList;
+        rulesListFull = new ArrayList<>(rulesList);
 
     }
 
@@ -41,22 +39,18 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
 
     @Override
     public void onBindViewHolder(ProductViewHolder holder, int position) {
-        Product product = productList.get(position);
+        Rules rules = rulesList.get(position);
 
-        //loading the image
-        Glide.with(mCtx)
-                .load(product.getImage())
-                .into(holder.imageView);
 
-        holder.textViewTitle.setText(product.getTitle());
-        holder.textViewShortDesc.setText(product.getShortdesc());
-        holder.textViewPromotion.setText(String.valueOf(product.getPromotion()));
-        holder.textViewPrice.setText(String.valueOf(product.getPrice()));
+
+        holder.textViewTitle.setText(rules.getItemA());
+        holder.textViewShortDesc.setText(rules.getItemB());
+
     }
 
     @Override
     public int getItemCount() {
-        return productList.size();
+        return rulesList.size();
     }
 
     class ProductViewHolder extends RecyclerView.ViewHolder {
@@ -71,26 +65,25 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
             textViewShortDesc = itemView.findViewById(R.id.textViewShortDesc);
             textViewPromotion = itemView.findViewById(R.id.textViewPromotion);
             textViewPrice = itemView.findViewById(R.id.textViewPrice);
-            imageView = itemView.findViewById(R.id.imageView);
         }
     }
 
     public Filter getFilter(){
-        return productFilter;
+        return rulesFilter;
     }
 
-    private Filter productFilter = new Filter() {
+    private Filter rulesFilter = new Filter() {
         @Override
         protected FilterResults performFiltering(CharSequence constraint) {
-            List<Product> filteredList = new ArrayList<>();
+            List<Rules> filteredList = new ArrayList<>();
 
             if (constraint == null || constraint.length() == 0) {
-                filteredList.addAll(productListFull);
+                filteredList.addAll(rulesListFull);
             } else {
                 String filterPattern = constraint.toString().toLowerCase().trim();
 
-                for (Product item : productListFull) {
-                    if (item.getTitle().toLowerCase().contains(filterPattern)) {
+                for (Rules item : rulesListFull) {
+                    if (item.getItemB().toLowerCase().contains(filterPattern)) {
                         filteredList.add(item);
                     }
                 }
@@ -105,8 +98,8 @@ public class ProductsAdapter extends RecyclerView.Adapter<ProductsAdapter.Produc
 
         @Override
         protected void publishResults(CharSequence constraint, FilterResults results) {
-            productList.clear();
-            productList.addAll((List) results.values);
+            rulesList.clear();
+            rulesList.addAll((List) results.values);
             notifyDataSetChanged();
 
         }
